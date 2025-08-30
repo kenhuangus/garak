@@ -65,8 +65,8 @@ def enable_gpu_testing():
     if device == "mps":
         import psutil
 
-        if psutil.virtual_memory().total < (16 * 1024**3):
-            device = "cpu"  # fallback when less than 16GB of unified memory
+        if psutil.virtual_memory().total < (8 * 1024**3):
+            device = "cpu"  # fallback when less than 8GB of unified memory
 
     from garak.langproviders.local import LocalHFTranslator
 
