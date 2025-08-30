@@ -8,18 +8,7 @@
 
 `garak`'s a free tool. We love developing it and are always interested in adding functionality to support applications. 
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Tests/Linux](https://github.com/NVIDIA/garak/actions/workflows/test_linux.yml/badge.svg)](https://github.com/NVIDIA/garak/actions/workflows/test_linux.yml)
-[![Tests/Windows](https://github.com/NVIDIA/garak/actions/workflows/test_windows.yml/badge.svg)](https://github.com/NVIDIA/garak/actions/workflows/test_windows.yml)
-[![Tests/OSX](https://github.com/NVIDIA/garak/actions/workflows/test_macos.yml/badge.svg)](https://github.com/NVIDIA/garak/actions/workflows/test_macos.yml)
-[![Documentation Status](https://readthedocs.org/projects/garak/badge/?version=latest)](http://garak.readthedocs.io/en/latest/?badge=latest)
-[![arXiv](https://img.shields.io/badge/cs.CL-arXiv%3A2406.11036-b31b1b.svg)](https://arxiv.org/abs/2406.11036)
-[![discord-img](https://img.shields.io/badge/chat-on%20discord-yellow.svg)](https://discord.gg/uVch4puUCs)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/garak)](https://pypi.org/project/garak)
-[![PyPI](https://badge.fury.io/py/garak.svg)](https://badge.fury.io/py/garak)
-[![Downloads](https://static.pepy.tech/badge/garak)](https://pepy.tech/project/garak)
-[![Downloads](https://static.pepy.tech/badge/garak/month)](https://pepy.tech/project/garak)
+
 
 
 ## Get started
@@ -54,37 +43,16 @@ Just grab it from PyPI and you should be good to go:
 python -m pip install -U garak
 ```
 
-### Install development version with `pip`
 
-The standard pip version of `garak` is updated periodically. To get a fresher version from GitHub, try:
-
-```
-python -m pip install -U git+https://github.com/NVIDIA/garak.git@main
-```
-
-### Clone from source
-
-`garak` has its own dependencies. You can to install `garak` in its own Conda environment:
-
-```
-conda create --name garak "python>=3.10,<=3.12"
-conda activate garak
-gh repo clone NVIDIA/garak
-cd garak
-python -m pip install -e .
-```
-
-OK, if that went fine, you're probably good to go!
-
-**Note**: if you cloned before the move to the `NVIDIA` GitHub organisation, but you're reading this at the `github.com/NVIDIA` URI, please update your remotes as follows:
-
-```
-git remote set-url origin https://github.com/NVIDIA/garak.git
-```
 
 
 ## Getting started
+```
+create venv 
 
+python -m venv venv
+.\venv\Scripts\activate
+```
 The general syntax is:
 
 `garak <options>`
