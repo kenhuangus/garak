@@ -81,8 +81,10 @@ See if the Hugging Face version of GPT2 is vulnerable to DAN 11.0
 ```
 python3 -m garak --model_type huggingface --model_name gpt2 --probes dan.Dan_11_0
 ```
-
-
+or you can tesr prompt injection as another example
+```
+python -m garak  --model_type huggingface --model_name gpt2  --probes promptinject.HijackHateHumans,promptinject.HijackKillHumans,promptinject.HijackLongPrompt
+```
 ## Reading the results
 
 For each probe loaded, garak will print a progress bar as it generates. Once generation is complete, a row evaluating that probe's results on each detector is given. If any of the prompt attempts yielded an undesirable behavior, the response will be marked as FAIL, and the failure rate given.
